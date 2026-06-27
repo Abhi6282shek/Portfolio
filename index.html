@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Optimization -->
+    <title>Abhishek K</title>
+    <meta name="description"
+        content="Welcome to the premium personal portfolio of Abhishek K, a passionate BCA AI & ML student, Software Developer, and Web Developer. Explore my futuristic projects, technical skills, and achievements.">
+    <meta name="keywords"
+        content="Abhishek K, Portfolio, BCA, AI, ML, Software Developer, Web Developer, Artificial Intelligence, Machine Learning, Presidency University">
+    <meta name="author" content="Abhishek K">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Abhishek K | Portfolio | BCA AI & ML Student">
+    <meta property="og:description"
+        content="Explore the futuristic, dark-themed portfolio of Abhishek K. Specializing in Software Development, Web Development, and Artificial Intelligence.">
+    <meta property="og:image" content="assets/profile.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Abhishek K | Portfolio | BCA AI & ML Student">
+    <meta property="twitter:description"
+        content="Explore the futuristic, dark-themed portfolio of Abhishek K. Specializing in Software Development, Web Development, and Artificial Intelligence.">
+    <meta property="twitter:image" content="assets/profile.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Core Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-bar" id="scroll-progress"></div>
+
+    <!-- Custom Glowing Cursor -->
+    <div class="custom-cursor" id="custom-cursor"></div>
+    <div class="custom-cursor-dot" id="custom-cursor-dot"></div>
+
+    <!-- Loading Screen -->
+    <div id="loader" class="loader-container">
+        <div class="loader-content">
+            <div class="cyber-spinner"></div>
+            <div class="loader-logo">
+                <span class="logo-prefix">&lt;</span>Abhishek<span class="logo-suffix">.K /&gt;</span>
+            </div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+            <span class="loader-text">INITIALIZING QUANTUM INTERFACE...</span>
+        </div>
+    </div>
+
+    <!-- Background Glow Effect (Cursor Follower) -->
+    <div class="cursor-glow" id="cursor-glow"></div>
+
+    <!-- Sticky Navigation Bar -->
+    <header class="header">
+        <div class="navbar-container">
+            <a href="#home" class="logo">
+                <span class="logo-prefix">&lt;</span>Abhishek<span class="logo-suffix">.K /&gt;</span>
+            </a>
+
+            <nav class="navbar" id="navbar">
+                <a href="#home" class="nav-link active" onclick="closeMobileMenu()"><i class="fa-solid fa-house"></i>
+                    Home</a>
+                <a href="#about" class="nav-link" onclick="closeMobileMenu()"><i class="fa-solid fa-user"></i> About</a>
+                <a href="#skills" class="nav-link" onclick="closeMobileMenu()"><i class="fa-solid fa-code"></i>
+                    Skills</a>
+                <a href="#projects" class="nav-link" onclick="closeMobileMenu()"><i class="fa-solid fa-laptop-code"></i>
+                    Projects</a>
+                <a href="#education" class="nav-link" onclick="closeMobileMenu()"><i
+                        class="fa-solid fa-graduation-cap"></i> Education</a>
+                <a href="#achievements" class="nav-link" onclick="closeMobileMenu()"><i class="fa-solid fa-trophy"></i>
+                    Achievements</a>
+                <a href="#contact" class="nav-link" onclick="closeMobileMenu()"><i class="fa-solid fa-envelope"></i>
+                    Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Premium Theme Toggle -->
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Light/Dark Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <a href="#resume" class="btn-resume-nav"><i class="fa-solid fa-file-arrow-down"></i> Resume</a>
+                <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <canvas id="particle-canvas" class="particle-canvas"></canvas>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-tag">
+                        <i class="fa-solid fa-circle-nodes"></i> Artificial Intelligence & Machine Learning Student
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text text-glow">Abhishek K</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        I am a <span class="typing-text" id="typed-text"></span><span class="typed-cursor">|</span>
+                    </h2>
+                    <p class="hero-description">
+                        An ambitious BCA student specializing in AI & ML. Dedicated to building innovative software
+                        solutions, intelligent web applications, and resolving complex algorithms. Bridging the gap
+                        between code and cognition.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-eye"></i> View Projects</a>
+                        <a href="#resume" class="btn btn-secondary"><i class="fa-solid fa-file-pdf"></i> Download
+                            Resume</a>
+                        <a href="#contact" class="btn btn-outline"><i class="fa-solid fa-paper-plane"></i> Contact
+                            Me</a>
+                    </div>
+                </div>
+
+                <div class="hero-image-container">
+                    <div class="glass-photo-frame">
+                        <div class="glow-border-layer"></div>
+                        <img src="assets/profile.png" alt="Abhishek K Professional Profile" class="hero-profile-img">
+                        <div class="tech-badge-overlay val-1" title="Java">
+                            <i class="fa-brands fa-java"></i>
+                        </div>
+                        <div class="tech-badge-overlay val-2" title="Spring Boot">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+                        <div class="tech-badge-overlay val-3" title="MySQL">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                        <div class="tech-badge-overlay val-4" title="HTML5">
+                            <i class="fa-brands fa-html5"></i>
+                        </div>
+                        <div class="tech-badge-overlay val-5" title="CSS3">
+                            <i class="fa-brands fa-css3-alt"></i>
+                        </div>
+                        <div class="tech-badge-overlay val-6" title="JavaScript">
+                            <i class="fa-brands fa-js"></i>
+                        </div>
+                        <div class="tech-badge-overlay val-7" title="AI">
+                            <i class="fa-solid fa-microchip"></i>
+                        </div>
+                        <div class="tech-badge-overlay val-8" title="Machine Learning">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#about" class="scroll-down-indicator" aria-label="Scroll to About Section">
+                <span class="scroll-mouse">
+                    <span class="scroll-wheel"></span>
+                </span>
+                <span class="scroll-arrow"></span>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title"><span class="number-tag">01.</span> About Me</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card glass-card">
+                        <div class="card-glow-element"></div>
+                        <h3>Innovating At The Edge Of Intelligence</h3>
+                        <p>
+                            Hello! I'm Abhishek K, currently pursuing a <strong>Bachelor of Computer Applications
+                                (BCA)</strong> with a specialization in <strong>Artificial Intelligence and Machine
+                                Learning</strong> at <strong>Presidency University</strong>. My academic journey has
+                            fueled a profound passion for technology, data science, and web architectures.
+                        </p>
+                        <p>
+                            I thrive on solving challenges, whether they involve developing full-stack web platforms,
+                            tuning neural networks, or debugging complex object-oriented programs. I am constantly
+                            updating my skills, exploring clean code paradigms, and seeking internships or projects
+                            where I can create real-world impact.
+                        </p>
+                        <p>
+                            My approach combines robust engineering principles with dynamic, creative UI design,
+                            ensuring applications are not just mathematically sound on the backend, but beautiful and
+                            interactive on the frontend.
+                        </p>
+                    </div>
+
+                    <div class="stats-container">
+                        <div class="stat-card glass-card">
+                            <div class="stat-icon-wrapper cyan-glow">
+                                <i class="fa-solid fa-rocket"></i>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number" data-target="3">0</span><span class="stat-plus"></span>
+                                <span class="stat-label">Projects Completed</span>
+                            </div>
+                        </div>
+
+                        <div class="stat-card glass-card">
+                            <div class="stat-icon-wrapper purple-glow">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number" data-target="10">0</span><span class="stat-plus">+</span>
+                                <span class="stat-label">Technologies Learned</span>
+                            </div>
+                        </div>
+
+                        <div class="stat-card glass-card">
+                            <div class="stat-icon-wrapper blue-glow">
+                                <i class="fa-brands fa-github"></i>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number" data-target="3">0</span><span class="stat-plus"></span>
+                                <span class="stat-label">GitHub Repositories</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title"><span class="number-tag">02.</span> Skills & Expertise</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Core Languages -->
+                    <div class="skill-category-card glass-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-terminal category-icon cyan-text"></i>
+                            <h4>Core Languages</h4>
+                        </div>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>HTML5 & CSS3</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill cyan-bg" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>JavaScript</span>
+                                    <span>65%</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill cyan-bg" style="width: 65%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Java</span>
+                                    <span>65%</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill cyan-bg" style="width: 65%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Frameworks & Databases -->
+                    <div class="skill-category-card glass-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-server category-icon purple-text"></i>
+                            <h4>Frameworks & Databases</h4>
+                        </div>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Spring Boot</span>
+                                    <span>60%</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill purple-bg" style="width: 60%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>MySQL Database</span>
+                                    <span>65%</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill purple-bg" style="width: 65%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Firebase Cloud System</span>
+                                    <span>60%</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill purple-bg" style="width: 60%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Environments -->
+                    <div class="skill-category-card glass-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-screwdriver-wrench category-icon blue-text"></i>
+                            <h4>Tools & Environments</h4>
+                        </div>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Android Studio & Android Development</span>
+                                    <span>65%</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill blue-bg" style="width: 65%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Git & GitHub Operations</span>
+                                    <span>70%</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill blue-bg" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack Section -->
+        <section id="tech-stack" class="tech-stack-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title"><span class="number-tag">03.</span> Tech Stack</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="tech-stack-grid">
+                    <!-- Frontend -->
+                    <div class="tech-category-card glass-card cyan-hover">
+                        <div class="card-glow-element"></div>
+                        <div class="tech-header">
+                            <i class="fa-solid fa-code tech-icon cyan-text"></i>
+                            <h3>Frontend</h3>
+                        </div>
+                        <div class="tech-items">
+                            <div class="tech-item"><i class="fa-brands fa-html5 text-orange-500"></i> HTML5</div>
+                            <div class="tech-item"><i class="fa-brands fa-css3-alt text-blue-500"></i> CSS3</div>
+                            <div class="tech-item"><i class="fa-brands fa-js text-yellow-500"></i> JavaScript</div>
+                        </div>
+                    </div>
+
+                    <!-- Backend -->
+                    <div class="tech-category-card glass-card purple-hover">
+                        <div class="card-glow-element"></div>
+                        <div class="tech-header">
+                            <i class="fa-solid fa-gears tech-icon purple-text"></i>
+                            <h3>Backend</h3>
+                        </div>
+                        <div class="tech-items">
+                            <div class="tech-item"><i class="fa-brands fa-java text-red-500"></i> Java</div>
+                            <div class="tech-item"><i class="fa-solid fa-leaf text-green-500"></i> Spring Boot</div>
+                        </div>
+                    </div>
+
+                    <!-- Database -->
+                    <div class="tech-category-card glass-card blue-hover">
+                        <div class="card-glow-element"></div>
+                        <div class="tech-header">
+                            <i class="fa-solid fa-database tech-icon blue-text"></i>
+                            <h3>Database</h3>
+                        </div>
+                        <div class="tech-items">
+                            <div class="tech-item"><i class="fa-solid fa-server text-cyan"></i> MySQL</div>
+                            <div class="tech-item"><i class="fa-solid fa-fire text-orange-500"></i> Firebase</div>
+                        </div>
+                    </div>
+
+                    <!-- Tools -->
+                    <div class="tech-category-card glass-card green-hover">
+                        <div class="card-glow-element"></div>
+                        <div class="tech-header">
+                            <i class="fa-solid fa-screwdriver-wrench tech-icon green-text"></i>
+                            <h3>Tools</h3>
+                        </div>
+                        <div class="tech-items">
+                            <div class="tech-item"><i class="fa-brands fa-git-alt text-orange-600"></i> Git</div>
+                            <div class="tech-item"><i class="fa-brands fa-github"></i> GitHub</div>
+                            <div class="tech-item"><i class="fa-solid fa-laptop-code text-blue-400"></i> VS Code</div>
+                            <div class="tech-item"><i class="fa-brands fa-android text-green-400"></i> Android Studio
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Project Section -->
+        <section id="featured-project" class="featured-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title"><span class="number-tag">04.</span> Spotlight Projects</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="featured-project-container glass-card">
+                    <div class="featured-project-banner">
+                        <div class="carousel-container">
+                            <div class="carousel-track" id="featured-carousel-track">
+                                <div class="carousel-slide active">
+                                    <img src="assets/rental_car_dashboard_screenshot.png"
+                                        alt="RentalCarAI Website Dashboard" class="carousel-img">
+                                    <div class="slide-caption">RentalCarAI - Interactive Home Dashboard</div>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="assets/project2.png" alt="Medical Store Billing System Invoice"
+                                        class="carousel-img">
+                                    <div class="slide-caption">Medical Store Billing - Invoice Dashboard</div>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="assets/project3.png" alt="Movie Booking Android App Seat Selection"
+                                        class="carousel-img">
+                                    <div class="slide-caption">Movie Booking App - Seat Selection Screen</div>
+                                </div>
+                            </div>
+                            <button class="carousel-btn prev-btn" id="featured-prev"><i
+                                    class="fa-solid fa-chevron-left"></i></button>
+                            <button class="carousel-btn next-btn" id="featured-next"><i
+                                    class="fa-solid fa-chevron-right"></i></button>
+                            <div class="carousel-dots" id="featured-dots">
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="featured-project-details">
+                        <span class="spotlight-tag"><i class="fa-solid fa-star"></i> Featured Implementation</span>
+                        <h3 id="featured-title">RentalCarAI Website</h3>
+                        <p class="project-long-desc" id="featured-desc">
+                            A production-ready, full-stack vehicle rental platform engineered to streamline the booking
+                            lifecycle. Features a responsive modern frontend client communicating with a highly secure
+                            Spring Boot API backend, supported by a structured MySQL relational database.
+                        </p>
+
+                        <div class="detail-split">
+                            <div class="features-block">
+                                <h4>Key Architecture & Features</h4>
+                                <ul class="features-list" id="featured-features-list">
+                                    <li><i class="fa-solid fa-circle-check text-cyan"></i> <strong>User
+                                            Authentication:</strong> Secure password encryption and session control.
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check text-cyan"></i> <strong>Fleet
+                                            Filters:</strong> Filter dynamic rental records by brand, fuel type, and
+                                        price.</li>
+                                    <li><i class="fa-solid fa-circle-check text-cyan"></i> <strong>Real-time
+                                            Search:</strong> High-speed string matching across fields.</li>
+                                    <li><i class="fa-solid fa-circle-check text-cyan"></i> <strong>My Bookings:</strong>
+                                        Personal client dashboard showing booking status and history.</li>
+                                </ul>
+                            </div>
+
+                            <div class="tech-stack-block">
+                                <h4>Core Technologies</h4>
+                                <div class="project-tech-badges" id="featured-tech-badges">
+                                    <span class="badge"><i class="fa-brands fa-html5 text-orange-500"></i> HTML5</span>
+                                    <span class="badge"><i class="fa-brands fa-css3-alt text-blue-500"></i> CSS3</span>
+                                    <span class="badge"><i class="fa-brands fa-js text-yellow-500"></i>
+                                        JavaScript</span>
+                                    <span class="badge"><i class="fa-solid fa-leaf text-green-500"></i> Spring
+                                        Boot</span>
+                                    <span class="badge"><i class="fa-solid fa-database text-cyan"></i> MySQL</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="featured-project-links">
+                            <a href="https://github.com/Abhi6282shek/RentalCarAI" target="_blank"
+                                class="btn btn-primary" id="featured-github-link"><i class="fa-brands fa-github"></i>
+                                Repository</a>
+                            <a href="#" target="_blank" class="btn btn-secondary live-demo-btn"
+                                id="featured-demo-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                                Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Animated Statistics Cards -->
+                <div class="featured-stats-grid" id="featured-stats-grid">
+                    <div class="featured-stat-card glass-card">
+                        <i class="fa-solid fa-car text-cyan"></i>
+                        <div class="stat-meta">
+                            <span class="stat-val" data-target="6">0</span><span class="plus-sign">+</span>
+                            <span class="stat-lbl">Cars Available</span>
+                        </div>
+                    </div>
+                    <div class="featured-stat-card glass-card">
+                        <i class="fa-solid fa-lock text-purple"></i>
+                        <div class="stat-meta">
+                            <span class="stat-lbl">Authentication System</span>
+                            <span class="stat-sublbl">Security Config</span>
+                        </div>
+                    </div>
+                    <div class="featured-stat-card glass-card">
+                        <i class="fa-solid fa-calendar-check text-blue"></i>
+                        <div class="stat-meta">
+                            <span class="stat-lbl">Booking Management</span>
+                            <span class="stat-sublbl">Dynamic Workflow</span>
+                        </div>
+                    </div>
+                    <div class="featured-stat-card glass-card">
+                        <i class="fa-solid fa-mobile-screen-button text-cyan"></i>
+                        <div class="stat-meta">
+                            <span class="stat-lbl">Responsive Design</span>
+                            <span class="stat-sublbl">Mobile Optimized</span>
+                        </div>
+                    </div>
+                    <div class="featured-stat-card glass-card">
+                        <i class="fa-solid fa-leaf text-green-500"></i>
+                        <div class="stat-meta">
+                            <span class="stat-lbl">Spring Boot Backend</span>
+                            <span class="stat-sublbl">RESTful Services</span>
+                        </div>
+                    </div>
+                    <div class="featured-stat-card glass-card">
+                        <i class="fa-solid fa-server text-purple"></i>
+                        <div class="stat-meta">
+                            <span class="stat-lbl">MySQL Database</span>
+                            <span class="stat-sublbl">Relational Integrity</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title"><span class="number-tag">05.</span> More Projects</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card glass-card" data-project-id="rental-car">
+                        <div class="project-image-wrapper">
+                            <img src="assets/rental_car_dashboard_screenshot.png" alt="RentalCar AI Website Thumbnail"
+                                class="project-img project-card-img-trigger">
+                            <div class="project-overlay"></div>
+                        </div>
+                        <div class="project-info">
+                            <h4 class="project-title">RentalCar AI Website</h4>
+                            <p class="project-desc">
+                                A full-stack vehicle rental platform engineered to streamline the booking lifecycle.
+                                Features a responsive modern frontend client communicating with a secure Spring Boot API
+                                backend and MySQL database.
+                            </p>
+                            <div class="project-tech-badges">
+                                <span class="badge">HTML5</span>
+                                <span class="badge">CSS3</span>
+                                <span class="badge">JavaScript</span>
+                                <span class="badge">Spring Boot</span>
+                                <span class="badge">MySQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Abhi6282shek/RentalCarAI" target="_blank"
+                                    class="btn btn-card-icon" title="View Source on GitHub"><i
+                                        class="fa-brands fa-github"></i> GitHub</a>
+                                <button class="btn btn-card-icon project-details-trigger-btn"
+                                    data-project-id="rental-car"><i class="fa-solid fa-circle-info"></i> Case
+                                    Study</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card glass-card" data-project-id="medical-billing">
+                        <div class="project-image-wrapper">
+                            <img src="assets/project2.png" alt="Medical Store Billing System Thumbnail"
+                                class="project-img project-card-img-trigger">
+                            <div class="project-overlay"></div>
+                        </div>
+                        <div class="project-info">
+                            <h4 class="project-title">Medical Store Billing System</h4>
+                            <p class="project-desc">
+                                A full-stack web application designed to automate medical store billing, manage medicine
+                                inventory, compute taxes, track sales, and generate digital invoices.
+                            </p>
+                            <div class="project-tech-badges">
+                                <span class="badge">ASP.NET Core</span>
+                                <span class="badge">MySQL</span>
+                                <span class="badge">HTML5/CSS3</span>
+                                <span class="badge">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Abhi6282shek/MedicalStoreBillingSystem" target="_blank"
+                                    class="btn btn-card-icon" title="View Source on GitHub"><i
+                                        class="fa-brands fa-github"></i> GitHub</a>
+                                <button class="btn btn-card-icon project-details-trigger-btn"
+                                    data-project-id="medical-billing"><i class="fa-solid fa-circle-info"></i> Case
+                                    Study</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card glass-card" data-project-id="movie-app">
+                        <div class="project-image-wrapper">
+                            <img src="assets/project3.png" alt="Movie Booking Android App Thumbnail"
+                                class="project-img project-card-img-trigger">
+                            <div class="project-overlay"></div>
+                        </div>
+                        <div class="project-info">
+                            <h4 class="project-title">Movie Booking Android App</h4>
+                            <p class="project-desc">
+                                A mobile application for real-time cinema ticket bookings. Features interactive seat
+                                maps, local offline caching with RoomDB, and real-time database updates via Firebase.
+                            </p>
+                            <div class="project-tech-badges">
+                                <span class="badge">Java</span>
+                                <span class="badge">Kotlin</span>
+                                <span class="badge">Android SDK</span>
+                                <span class="badge">Firebase</span>
+                                <span class="badge">RoomDB</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Abhi6282shek/MovieBookingApp" target="_blank"
+                                    class="btn btn-card-icon" title="View Source on GitHub"><i
+                                        class="fa-brands fa-github"></i> GitHub</a>
+                                <button class="btn btn-card-icon project-details-trigger-btn"
+                                    data-project-id="movie-app"><i class="fa-solid fa-circle-info"></i> Case
+                                    Study</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section> <!-- GitHub Showcase Section -->
+        <section id="github-showcase" class="github-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title"><span class="number-tag">06.</span> GitHub Operations</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="github-showcase-container">
+                    <!-- Profile Card -->
+                    <div class="github-profile-card glass-card">
+                        <div class="profile-header">
+                            <img src="assets/profile.png" alt="Abhishek K GitHub Profile" class="github-avatar">
+                            <div class="profile-meta">
+                                <h3>Abhishek K</h3>
+                                <p class="username">@Abhi6282shek</p>
+                                <p class="bio">BCA AI & ML Student</p>
+                            </div>
+                        </div>
+                        <div class="profile-stats">
+                            <div class="github-stat">
+                                <span class="stat-number-val">20+</span>
+                                <span class="stat-label-lbl">Repositories</span>
+                            </div>
+                            <div class="github-stat">
+                                <span class="stat-number-val">150+</span>
+                                <span class="stat-label-lbl">Commits (2026)</span>
+                            </div>
+                            <div class="github-stat">
+                                <span class="stat-number-val">4</span>
+                                <span class="stat-label-lbl">Collabs</span>
+                            </div>
+                        </div>
+
+                        <!-- Mock Contribution Graph -->
+                        <div class="github-contributions">
+                            <h4>Contribution Activity</h4>
+                            <div class="contrib-grid">
+                                <div class="contrib-row">
+                                    <div class="cell lvl-0"></div>
+                                    <div class="cell lvl-1"></div>
+                                    <div class="cell lvl-2"></div>
+                                    <div class="cell lvl-0"></div>
+                                    <div class="cell lvl-3"></div>
+                                    <div class="cell lvl-1"></div>
+                                    <div class="cell lvl-2"></div>
+                                    <div class="cell lvl-0"></div>
+                                    <div class="cell lvl-1"></div>
+                                    <div class="cell lvl-4"></div>
+                                    <div class="cell lvl-2"></div>
+                                    <div class="cell lvl-3"></div>
+                                    <div class="cell lvl-1"></div>
+                                    <div class="cell lvl-0"></div>
+                                    <div class="cell lvl-2"></div>
+                                    <div class="cell lvl-1"></div>
+                                    <div class="cell lvl-3"></div>
+                                    <div class="cell lvl-0"></div>
+                                    <div class="cell lvl-1"></div>
+                                    <div class="cell lvl-2"></div>
+                                    <div class="cell lvl-4"></div>
+                                </div>
+                                <div class="contrib-row">
+                                    <div class="cell lvl-1"></div>
+                                    <div class="cell lvl-2"></div>
+                                    <div class="cell lvl-0"></div>
+                                    <div class="cell lvl-1"></div>
+                                    <div class="cell lvl-2"></div>
+                                    <div class="cell lvl-4"></div>
+                                    <div class="cell lvl-1"></div>
+                                    <div class="cell lvl-3"></div>
+                                    <div class="cell lvl-2"></div>
+                                    <div class="cell lvl-0"></div>
+                                    <div class="cell lvl-1"></div>
+                                    <div class="cell lvl-0"></div>
+                                    <div class="cell lvl-3"></div>
+                                    <div class="cell lvl-1"></div>
+                                    <div class="cell lvl-2"></div>
+                                    <div class="cell lvl-0"></div>
+                                    <div class="cell lvl-1"></div>
+                                    <div class="cell lvl-2"></div>
+                                    <div class="cell lvl-0"></div>
+                                    <div class="cell lvl-3"></div>
+                                    <div class="cell lvl-1"></div>
+                                </div>
+                                <div class="contrib-row">
+                                    <div class="cell lvl-2"></div>
+                                    <div class="cell lvl-0"></div>
+                                    <div class="cell lvl-1"></div>
+                                    <div class="cell lvl-3"></div>
+                                    <div class="cell lvl-0"></div>
+                                    <div class="cell lvl-1"></div>
+                                    <div class="cell lvl-2"></div>
+                                    <div class="cell lvl-0"></div>
+                                    <div class="cell lvl-3"></div>
+                                    <div class="cell lvl-4"></div>
+                                    <div class="cell lvl-1"></div>
+                                    <div class="cell lvl-2"></div>
+                                    <div class="cell lvl-0"></div>
+                                    <div class="cell lvl-1"></div>
+                                    <div class="cell lvl-3"></div>
+                                    <div class="cell lvl-2"></div>
+                                    <div class="cell lvl-4"></div>
+                                    <div class="cell lvl-1"></div>
+                                    <div class="cell lvl-0"></div>
+                                    <div class="cell lvl-2"></div>
+                                    <div class="cell lvl-3"></div>
+                                </div>
+                            </div>
+                            <div class="contrib-legend">
+                                <span>Less</span>
+                                <div class="legend-box lvl-0"></div>
+                                <div class="legend-box lvl-1"></div>
+                                <div class="legend-box lvl-2"></div>
+                                <div class="legend-box lvl-3"></div>
+                                <div class="legend-box lvl-4"></div>
+                                <span>More</span>
+                            </div>
+                        </div>
+
+                        <a href="https://github.com/Abhi6282shek" target="_blank"
+                            class="btn btn-outline github-btn-wide"><i class="fa-brands fa-github"></i> Visit Profile on
+                            GitHub</a>
+                    </div>
+
+                    <!-- Top Repos -->
+                    <div class="github-repos-container">
+                        <h4>Featured Repositories</h4>
+                        <div class="repos-grid">
+                            <!-- Repo 1 -->
+                            <div class="repo-card glass-card">
+                                <div class="repo-header">
+                                    <i class="fa-regular fa-folder-open repo-folder-icon"></i>
+                                    <h5>RentalCarAI</h5>
+                                </div>
+                                <p class="repo-desc">Production-grade Spring Boot vehicle booking application featuring
+                                    dynamic pricing and filters.</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang"><span class="lang-color java-lang"></span>Java</span>
+                                    <span class="repo-stars"><i class="fa-regular fa-star"></i> 14</span>
+                                    <span class="repo-forks"><i class="fa-solid fa-code-fork"></i> 6</span>
+                                </div>
+                                <a href="https://github.com/Abhi6282shek/RentalCarAI" target="_blank"
+                                    class="repo-link-overlay"></a>
+                            </div>
+
+                            <!-- Repo 2 -->
+                            <div class="repo-card glass-card">
+                                <div class="repo-header">
+                                    <i class="fa-regular fa-folder-open repo-folder-icon"></i>
+                                    <h5>MovieBookingApp</h5>
+                                </div>
+                                <p class="repo-desc">Mobile seat allocation and ticketing application running on Room
+                                    Database and Android SDK.</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang"><span class="lang-color kotlin-lang"></span>Kotlin</span>
+                                    <span class="repo-stars"><i class="fa-regular fa-star"></i> 9</span>
+                                    <span class="repo-forks"><i class="fa-solid fa-code-fork"></i> 3</span>
+                                </div>
+                                <a href="https://github.com/Abhi6282shek/MovieBookingApp" target="_blank"
+                                    class="repo-link-overlay"></a>
+                            </div>
+
+                            <!-- Repo 3 -->
+                            <div class="repo-card glass-card">
+                                <div class="repo-header">
+                                    <i class="fa-regular fa-folder-open repo-folder-icon"></i>
+                                    <h5>MedicalStoreBillingSystem</h5>
+                                </div>
+                                <p class="repo-desc">Web application for medical billing, medicine inventory management,
+                                    and digital invoice generation.</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang"><span class="lang-color csharp-lang"></span>C#</span>
+                                    <span class="repo-stars"><i class="fa-regular fa-star"></i> 1</span>
+                                    <span class="repo-forks"><i class="fa-solid fa-code-fork"></i> 0</span>
+                                </div>
+                                <a href="https://github.com/Abhi6282shek/MedicalStoreBillingSystem" target="_blank"
+                                    class="repo-link-overlay"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title"><span class="number-tag">07.</span> Education</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="timeline-container">
+                    <div class="timeline-line"></div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-badge">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div class="timeline-card glass-card">
+                            <span class="timeline-date"><i class="fa-regular fa-calendar-days"></i> 2024 - 2027
+                                (Expected)</span>
+                            <h4>Bachelor of Computer Applications (BCA)</h4>
+                            <h5 class="timeline-institution"><i class="fa-solid fa-building-columns"></i> Presidency
+                                University, Bengaluru</h5>
+                            <p class="timeline-specialization"><strong>Specialization:</strong> Artificial Intelligence
+                                & Machine Learning</p>
+                            <p class="timeline-details">
+                                Currently maintaining an outstanding academic standing with rigorous coursework
+                                including Design and Analysis of Algorithms, Artificial Intelligence foundations, Deep
+                                Learning model architectures, Database Management Systems, and Object-Oriented Software
+                                Engineering. Active participant in university technical events, robotics clubs, and
+                                hackathons.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="achievements-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title"><span class="number-tag">08.</span> Achievements</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="achievements-grid">
+                    <!-- Achievement 3 -->
+                    <div class="achievement-card glass-card"
+                        style="grid-column: 1 / -1; max-width: 500px; margin: 0 auto;">
+                        <div class="achievement-icon-box blue-glow">
+                            <i class="fa-solid fa-robot"></i>
+                        </div>
+                        <h4>AI & ML Learning</h4>
+                        <p>
+                            Successfully completed comprehensive certifications in Neural Networks, Deep Learning
+                            architectures, and Supervised Machine Learning models from recognized e-learning platforms.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="resume-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title"><span class="number-tag">09.</span> Resume</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="resume-wrapper">
+                    <div class="resume-card glass-card">
+                        <div class="resume-glow"></div>
+                        <div class="resume-preview">
+                            <div class="preview-header">
+                                <div class="preview-dot dot-red"></div>
+                                <div class="preview-dot dot-yellow"></div>
+                                <div class="preview-dot dot-green"></div>
+                                <div class="preview-title">abhishek_k_resume.pdf</div>
+                            </div>
+                            <div class="preview-body">
+                                <div class="preview-line-large"></div>
+                                <div class="preview-line-medium"></div>
+                                <div class="preview-blocks-grid">
+                                    <div class="preview-block-side">
+                                        <div class="preview-line-small"></div>
+                                        <div class="preview-line-small"></div>
+                                        <div class="preview-line-small"></div>
+                                    </div>
+                                    <div class="preview-block-main">
+                                        <div class="preview-line-medium"></div>
+                                        <div class="preview-line-large"></div>
+                                        <div class="preview-line-medium"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="resume-details">
+                            <h3>Ready for Internships & Projects</h3>
+                            <p>
+                                Looking for a software developer, web developer, or AI/ML intern role? My detailed
+                                resume highlights academic course achievements, full skill proficiencies, and my
+                                pipeline of development projects. Download a copy to read offline!
+                            </p>
+                            <a href="assets/resume.pdf" download="Abhishek_K_Resume.pdf"
+                                class="btn btn-primary btn-large">
+                                <i class="fa-solid fa-cloud-arrow-down"></i> Download Full Resume
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title"><span class="number-tag">10.</span> Contact Me</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info-panel">
+                        <h3>Let's Collaborate</h3>
+                        <p class="contact-intro">
+                            Have an interesting project, internship opportunity, or just want to chat about AI/ML or web
+                            development? Reach out through any of these platforms or use the form!
+                        </p>
+
+                        <div class="contact-methods">
+                            <div class="contact-method-card glass-card">
+                                <i class="fa-solid fa-envelope method-icon cyan-text"></i>
+                                <div class="method-details">
+                                    <span>Email Me</span>
+                                    <a href="mailto:abhi6282shek@gmail.com">abhi6282shek@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-method-card glass-card">
+                                <i class="fa-solid fa-phone method-icon purple-text"></i>
+                                <div class="method-details">
+                                    <span>Call Me</span>
+                                    <a href="tel:+916282562173">+91 62825 62173</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-method-card glass-card">
+                                <i class="fa-solid fa-location-dot method-icon blue-text"></i>
+                                <div class="method-details">
+                                    <span>Location</span>
+                                    <p>Bengaluru, Karnataka, India</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links-wrapper">
+                            <a href="https://github.com/Abhi6282shek" target="_blank"
+                                class="social-link-btn github-glow" aria-label="GitHub Profile">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/abhishek-k-aiml" target="_blank"
+                                class="social-link-btn linkedin-glow" aria-label="LinkedIn Profile">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" target="_blank" class="social-link-btn twitter-glow"
+                                aria-label="Twitter Profile">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                            <a href="#" target="_blank" class="social-link-btn instagram-glow"
+                                aria-label="Instagram Profile">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-panel glass-card">
+                        <div class="card-glow-element"></div>
+                        <h3>Send A Message</h3>
+
+                        <form id="contact-form" class="contact-form" action="https://formspree.io/f/xvgowoze"
+                            method="POST">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" required placeholder=" " autocomplete="name">
+                                <label for="name">Your Name</label>
+                                <span class="input-focus-line"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" required placeholder=" "
+                                    autocomplete="email">
+                                <label for="email">Your Email</label>
+                                <span class="input-focus-line"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" id="subject" name="subject" required placeholder=" ">
+                                <label for="subject">Subject</label>
+                                <span class="input-focus-line"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <textarea id="message" name="message" required placeholder=" " rows="5"></textarea>
+                                <label for="message">Your Message</label>
+                                <span class="input-focus-line"></span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                <span class="btn-text">Transmit Message</span>
+                                <i class="fa-solid fa-paper-plane send-icon"></i>
+                            </button>
+                        </form>
+
+                        <div id="form-feedback" class="form-feedback-message">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Message transmitted successfully! Abhishek will contact you shortly.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#home" class="logo">
+                    <span class="logo-prefix">&lt;</span>Abhishek<span class="logo-suffix">.K /&gt;</span>
+                </a>
+                <p>Developing intelligent applications and designing interfaces for the future.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#achievements">Achievements</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright-text">
+                    &copy; 2026 Abhishek K. All Rights Reserved. Crafted with <i
+                        class="fa-solid fa-heart heart-pulse"></i> & Pure Javascript.
+                </p>
+                <div class="visitor-counter-wrapper">
+                    <span class="pulse-dot"></span>
+                    <span class="visitor-label">SECURE SITE HITS:</span>
+                    <span id="visitor-count-val" class="visitor-count">0,000</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Details Modal -->
+    <div id="project-modal" class="modal-overlay" aria-hidden="true" role="dialog">
+        <div class="modal-container glass-card">
+            <button class="modal-close-btn" id="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-body">
+                <div class="modal-gallery">
+                    <div class="modal-carousel">
+                        <img id="modal-project-img" src="" alt="Project Screenshot" class="modal-carousel-img"
+                            style="cursor: zoom-in;">
+                        <button class="modal-carousel-btn prev" id="modal-carousel-prev" aria-label="Previous image"><i
+                                class="fa-solid fa-chevron-left"></i></button>
+                        <button class="modal-carousel-btn next" id="modal-carousel-next" aria-label="Next image"><i
+                                class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                    <div class="modal-carousel-dots" id="modal-carousel-dots">
+                        <!-- Populated dynamically -->
+                    </div>
+                </div>
+                <div class="modal-info">
+                    <h3 id="modal-title" class="gradient-text">Project Title</h3>
+                    <div class="project-tech-badges" id="modal-tech-badges">
+                        <!-- Populated Dynamically -->
+                    </div>
+                    <p id="modal-desc" class="modal-description">Detailed description here.</p>
+
+                    <div class="modal-split">
+                        <div class="modal-features-list">
+                            <h4>Key Features</h4>
+                            <ul id="modal-features-ul">
+                                <!-- Populated Dynamically -->
+                            </ul>
+                        </div>
+                        <div class="modal-outcomes">
+                            <h4>Challenges & Outcomes</h4>
+                            <p id="modal-challenges">Details about challenges and outcomes.</p>
+                        </div>
+                    </div>
+
+                    <div class="modal-actions">
+                        <a href="#" id="modal-github-link" target="_blank" class="btn btn-primary"><i
+                                class="fa-brands fa-github"></i> Repository</a>
+                        <a href="#" id="modal-demo-link" target="_blank" class="btn btn-secondary"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                        <button id="modal-back-btn" class="btn btn-outline"><i class="fa-solid fa-arrow-left"></i>
+                            Back</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Lightbox -->
+    <div id="lightbox" class="lightbox-overlay" aria-hidden="true">
+        <span class="lightbox-close" id="lightbox-close">&times;</span>
+        <img id="lightbox-img" src="" alt="Fullscreen Lightbox Screenshot">
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Core Scripts -->
+    <script src="js/main_v2.js"></script>
+</body>
+
+</html>
